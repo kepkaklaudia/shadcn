@@ -4,6 +4,7 @@ import { NextIntlClientProvider, useLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import { TanstackWrapper } from "./TanstackWrapper";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -37,7 +38,7 @@ export default async function RootLayout({ children }: Props) {
     <html lang={locale}>
       <body className={barlow.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <TanstackWrapper>{children}</TanstackWrapper>
         </NextIntlClientProvider>
       </body>
     </html>
