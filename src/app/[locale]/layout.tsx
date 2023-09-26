@@ -4,7 +4,7 @@ import { NextIntlClientProvider, useLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import { TanstackWrapper } from "./TanstackWrapper";
+import { TanstackWrapper } from "@/app/[locale]/TanstackWrapper";
 
 const barlow = Barlow({
   subsets: ["latin"],
