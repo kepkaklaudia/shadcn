@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 import { Border } from "@/components/common/border";
 import { Title } from "@/components/common/title";
-import { AboutProduction } from "@/components/homepage/AboutProduction";
-import { AboutUs } from "@/components/homepage/AboutUs";
+import { AboutProduction } from "@/components/homepage/aboutProduction";
+import { AboutUs } from "@/components/homepage/aboutUs";
 import { Carousel } from "@/components/homepage/Carousel";
-import { CategoriesCarousel } from "@/components/homepage/CategoriesCarousel/categoriesCarousel";
+import { CategoriesCarousel } from "@/components/homepage/categoriesCarousel";
 import { CreateTrailers } from "@/components/homepage/CreateTrailers";
 import { carouselImages } from "@/app/[locale]/(homepage)/backgroundImages";
 
