@@ -4,6 +4,8 @@ import {
   MotionAppear,
   MotionScrollOut,
 } from "@/components/aboutUs/Intro/motion";
+import { cn } from "@/libs/utils";
+import { heading } from "@/components/ui/classes";
 
 export const Intro = () => {
   const t = useTranslations("about-us.intro");
@@ -24,7 +26,7 @@ export const Intro = () => {
             </MotionScrollOut>
           }
           secondItem={
-            <h2 className="text-[25px] font-bold mt-[50px] mb-2 mini:text-3xl lg:text-[35px]">
+            <h2 className={cn(heading, "mb-2")}>
               {t("Get to know Balhanger")}
             </h2>
           }
