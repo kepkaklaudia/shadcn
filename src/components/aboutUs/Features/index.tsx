@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import { Feature } from "@/components/aboutUs/Features/feature";
 import { MotionHover } from "@/components/motion/MotionHover";
 import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { cn } from "@/libs/utils";
+import { heading } from "@/components/ui/classes";
 
 export const Features = () => {
   const t = useTranslations("about-us.features");
@@ -38,7 +40,7 @@ export const Features = () => {
         </MotionHover>
       </div>
       <MotionShuffle x={"50vw"}>
-        <h2 className="text-[25px] font-bold mt-[50px] mini:text-3xl lg:text-[35px] leading-normal mb-3">
+        <h2 className={cn(heading, "leading-normal mb-3")}>
           {t("Why choose")}
         </h2>
         <p>{t("As a new producer")}</p>
