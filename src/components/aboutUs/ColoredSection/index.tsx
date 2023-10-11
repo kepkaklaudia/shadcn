@@ -4,6 +4,7 @@ import { cn } from "@/libs/utils";
 import { MotionShuffle } from "@/components/motion/MotionShuffle";
 import { MotionScrollIn } from "@/components/aboutUs/ColoredSection/motion";
 import { Stroke } from "@/components/common/stroke";
+import { heading } from "@/components/ui/classes";
 
 export const ColoredSection = () => {
   const t = useTranslations("about-us.coloredSection");
@@ -25,7 +26,7 @@ export const ColoredSection = () => {
           </MotionScrollIn>
           <div className={cn(wrapper, "-order-1 xl:order-1")}>
             <MotionShuffle x={"50vw"}>
-              <h2 className="text-[25px] font-bold self-start mini:text-3xl lg:text-[35px]">
+              <h2 className={cn(heading, "mt-0 self-start")}>
                 {t("Production process")}
               </h2>
               <p className="sm:text-base text-sm mx-auto my-2">
