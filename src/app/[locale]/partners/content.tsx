@@ -122,7 +122,7 @@ export const Content = () => {
 
   return (
     <>
-      <div className="relative flex flex-col justify-items-center w-full h-auto -mt-[59px] xs:-mt-[54px] sm:-mt-[109px] lg:-mt-[105px]">
+      <div className="relative flex flex-col justify-items-center w-full h-auto">
         <div
           className="h-[90vh] min-h-[500px] w-full relative"
           ref={mapContainerRef}
@@ -144,7 +144,7 @@ export const Content = () => {
             className="absolute -translate-y-2/4 w-5 h-auto left-[5px] top-2/4"
           />
         </div>
-        <div className="w-full sm:w-4/5 lg:w-[30%] max-h-none lg:max-h-[50vh] mt-[30px] lg:absolute right-0 top-0 flex max-w-[400px] overflow-y-auto flex-col justify-items-center bg-alabaster lg:rounded-tl-[5px] lg:rounded-bl-[5px]  lg:border lg:border-alto lg:border-solid lg:shadow-map mx-auto mt-[30px] mb-[80px] lg:mt-[80px] lg:px-3 lg:py-2">
+        <div className="w-11/12 sm:w-4/5 lg:w-[30%] max-h-none lg:max-h-[50vh] mt-[30px] lg:absolute right-0 top-0 flex max-w-[400px] overflow-y-auto flex-col justify-items-center bg-alabaster lg:rounded-tl-[5px] lg:rounded-bl-[5px]  lg:border lg:border-alto lg:border-solid lg:shadow-map mx-auto mt-[30px] mb-[80px] lg:mt-[80px] lg:px-3 lg:py-2">
           <div className="flex flex-col items-start mt-[5px] mb-5">
             <h1 className="self-start text-xl font-medium">
               {t("Our partners")}
