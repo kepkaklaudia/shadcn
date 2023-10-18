@@ -2,9 +2,9 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { MotionHover } from "@/components/motion/MotionHover";
-import { MotionOpacity } from "@/components/motion/MotionOpacity";
-import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { MotionHover } from "@/components/motion/motionHover";
+import { MotionOpacity } from "@/components/motion/motionOpacity";
+import { MotionShuffle } from "@/components/motion/motionShuffle";
 import { cn } from "@/libs/utils";
 import { heading, homepageWrapper } from "@/components/ui/classes";
 
