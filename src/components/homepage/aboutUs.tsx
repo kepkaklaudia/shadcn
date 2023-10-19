@@ -3,9 +3,9 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/Button";
-import { MotionOpacity } from "@/components/motion/MotionOpacity";
-import { MotionHover } from "@/components/motion/MotionHover";
-import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { MotionOpacity } from "@/components/motion/motionOpacity";
+import { MotionHover } from "@/components/motion/motionHover";
+import { MotionShuffle } from "@/components/motion/motionShuffle";
 import { Border } from "@/components/common/border";
 import { cn } from "@/libs/utils";
 import { heading, homepageWrapper } from "@/components/ui/classes";
