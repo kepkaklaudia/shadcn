@@ -1,6 +1,6 @@
 import { Stroke } from "@/components/common/stroke";
-import { MotionOpacity } from "@/components/motion/MotionOpacity";
-import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { MotionOpacity } from "@/components/motion/motionOpacity";
+import { MotionShuffle } from "@/components/motion/motionShuffle";
 
 export const StrokedTitle = ({ title }: { title: string }) => {
   return (
