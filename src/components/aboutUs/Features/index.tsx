@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Feature } from "@/components/aboutUs/Features/feature";
-import { MotionHover } from "@/components/motion/MotionHover";
-import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { MotionHover } from "@/components/motion/motionHover";
+import { MotionShuffle } from "@/components/motion/motionShuffle";
 import { cn } from "@/libs/utils";
 import { heading } from "@/components/ui/classes";
 

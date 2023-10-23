@@ -1,4 +1,4 @@
-import { MotionOpacity } from "@/components/motion/MotionOpacity";
+import { MotionOpacity } from "@/components/motion/motionOpacity";
 import { TitleProps } from "@/libs/types";
 
 export const Title = ({ heading, subheading }: TitleProps) => {

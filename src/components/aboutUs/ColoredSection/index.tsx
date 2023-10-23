@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { cn } from "@/libs/utils";
-import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { MotionShuffle } from "@/components/motion/motionShuffle";
 import { MotionScrollIn } from "@/components/aboutUs/ColoredSection/motion";
 import { Stroke } from "@/components/common/stroke";
 import { heading } from "@/components/ui/classes";

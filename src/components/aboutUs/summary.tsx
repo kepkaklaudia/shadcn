@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { MotionShuffle } from "@/components/motion/MotionShuffle";
+import { MotionShuffle } from "@/components/motion/motionShuffle";
 
 export const Summary = () => {
   const t = useTranslations("about-us.summary");
