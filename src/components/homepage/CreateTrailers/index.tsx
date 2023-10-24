@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
-import { SectionImage } from "@/components/homepage/CreateTrailers/SectionImage";
+import { SectionImage } from "@/components/homepage/CreateTrailers/sectionImage";
 import { Title } from "@/components/common/title";
 import { Border } from "@/components/common/border";
 import { Link } from "@/libs/i18n/navigation";
