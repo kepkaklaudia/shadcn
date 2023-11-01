@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
-import { TrailerDetaiProps } from "@/libs/types";
+import { TrailerDetailProps } from "@/libs/types";
 import { Border } from "@/components/common/border";
 import { Button } from "@/components/ui/Button";
 import { Details } from "@/components/products/TrailerDetail/Details";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Header } from "@/components/products/TrailerDetail/header";
 
-export const TrailerDetailList = ({ products }: TrailerDetaiProps) => {
+export const TrailerDetailList = ({ products }: TrailerDetailProps) => {
   const locale = useLocale();
   const t = useTranslations("products.trailerDetail");
 
