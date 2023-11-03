@@ -27,7 +27,11 @@ const CategoriesButtons = ({
           />
         ))}
       </div>
-      <Button asChild>
+      <Button
+        size={pageCategory === "all" ? "active" : "default"}
+        variant={pageCategory === "all" ? "allActive" : "all"}
+        asChild
+      >
         <Link href="/products/all">{t("Show all")}</Link>
       </Button>
     </>
