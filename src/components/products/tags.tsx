@@ -8,7 +8,7 @@ export const Tags = ({ handleTagClick, tags, selectedTags }: TagsProps) => {
 
   return (
     <div className="max-w-full text-left text-sm xl:text-base lg:max-w-[70%]">
-      <p>{t("Tags")}</p>
+      <p className="mb-2">{t("Tags")}</p>
       <div className="flex flex-wrap gap-y-2.5 gap-x-[5px] m-0">
         {tags.map((tag) => (
           <p
@@ -17,10 +17,9 @@ export const Tags = ({ handleTagClick, tags, selectedTags }: TagsProps) => {
               handleTagClick(tag as keyof Messages["products"]["tags"])
             }
             className={cn(
-              selectedTags.includes(tag)
-                ? "font-medium"
-                : linkStyle &&
-                    "w-auto text-blackOpacity transition-colors duration-300 m-0"
+              linkStyle,
+              selectedTags.includes(tag) ? "text-black" : "text-blackOpacity",
+              "w-auto  transition-colors duration-300 m-0 hover:after:bg-black hover:text-black"
             )}
           >
             {t(tag as keyof Messages["products"]["tags"])}
