@@ -5,7 +5,7 @@ export const CategoriesSection = () => {
   const t = useTranslations("about-us.categoriesSection");
 
   return (
-    <section>
+    <section className="flex flex-col justify-center">
       <h2 className="text-[25px] font-bold mt-[50px] mini:text-3xl lg:text-[35px]">
         {t("Our trailer models")}
       </h2>
