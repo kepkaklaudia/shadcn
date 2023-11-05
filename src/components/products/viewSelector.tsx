@@ -11,7 +11,7 @@ export const ViewSelector = ({ handleViewChange, view }: ViewSelectorProps) => {
 
   return (
     <div className="text-sm text-left xl:text-base">
-      <p>{t("View")}</p>
+      <p className="mb-2">{t("View")}</p>
       <div className="flex flex-wrap gap-2.5 m-0">
         <Image
           onClick={() => handleViewChange("list")}
