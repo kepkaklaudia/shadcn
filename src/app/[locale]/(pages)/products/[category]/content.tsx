@@ -16,9 +16,9 @@ import { Stroke } from "@/components/common/stroke";
 import CategoriesButtons from "@/components/products/categoriesButtons";
 import { Tags } from "@/components/products/tags";
 import { ViewSelector } from "@/components/products/viewSelector";
-import { SortSection } from "@/components/products/SortSection";
-import { TrailerDetailGrid } from "@/components/products/TrailerDetail/Grid";
-import { TrailerDetailList } from "@/components/products/TrailerDetail/List";
+import { SortSection } from "@/components/products/sortSection";
+import { TrailerDetailGrid } from "@/components/products/TrailerDetail/grid";
+import { TrailerDetailList } from "@/components/products/TrailerDetail/list";
 import { Heading } from "@/components/products/heading";
 import { SortModal } from "@/components/products/SortModal";
 
@@ -122,22 +122,22 @@ export const Content = ({ category }: { category: string }) => {
             />
             <ViewSelector handleViewChange={handleViewChange} view={view} />
           </div>
-       {/*   <SortSection
+          <SortSection
             sortBy={sortBy}
             setSortBy={setSortBy}
             handleSort={handleSort}
             selectedTags={selectedTags}
             setShowModal={setShowModal}
-  />*/}
+          />
         </div>
-     {/*}   <SortModal
+        <SortModal
           showModal={showModal}
           setShowModal={setShowModal}
           sortBy={sortBy}
           setSortBy={setSortBy}
           setSelectedTags={setSelectedTags}
           handleSort={handleSort}
-  />*/}
+        />
       </div>
       <div ref={scrollHereRef} />
       <Stroke
