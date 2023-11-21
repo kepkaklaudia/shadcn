@@ -5,6 +5,8 @@ import { Stroke } from "@/components/common/stroke";
 import { MotionOpacity } from "@/components/motion/MotionOpacity";
 import { MotionSpring } from "@/components/motion/MotionSpring";
 import { ContactData } from "@/components/contact/ContactData";
+import { cn } from "@/libs/utils";
+import { heading } from "@/components/ui/classes";
 
 export async function generateMetadata() {
   const t = await getTranslations("metaData.contactPage");
@@ -22,9 +24,7 @@ export default function ContactPage() {
     <>
       <div className="w-4/5 flex flex-col items-start text-left">
         <MotionOpacity>
-          <h2 className="text-[25px] font-bold m-0 xs:mb-[50px] mini:text-3xl lg:text-[35px]">
-            {t("Contact")}
-          </h2>
+          <h2 className={cn(heading, "m-0 xs:mb-[50px]")}>{t("Contact")}</h2>
           <ContactData />
         </MotionOpacity>
       </div>
@@ -45,10 +45,7 @@ export default function ContactPage() {
       />
       <div className="w-4/5 flex flex-col items-start text-left">
         <MotionOpacity>
-          <h2
-            id="contactForm"
-            className="text-[25px] font-bold m-0 xs:mb-[50px] mini:text-3xl lg:text-[35px]"
-          >
+          <h2 id="contactForm" className={cn(heading, "m-0 xs:mb-[50px]")}>
             {t("We are at your service")}
           </h2>
         </MotionOpacity>
