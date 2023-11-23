@@ -1,0 +1,103 @@
+{
+  "data": {
+    "pathID": "opti-55",
+    "pdfGalvanized": "opti-55-galvanized",
+    "pdfPowdered": "opti-55-powdered",
+    "name": "Opti 55",
+    "category": "Car Transporters",
+    "path": "car-transporters",
+    "family": "opti",
+    "tags": ["GVW3500", "GVW3000", "GVW2700", "two-axles"]
+  },
+
+  "specification": {
+    "gvw": "2700 | 3000 | 3500",
+    "load": "1900 | 2200 | 2650",
+    "area": "5500x2100",
+    "weight": "800 | 800 | 850",
+    "dimensions": "7115 X 2100 X 679",
+    "axles": "2",
+    "axlesType": "Braked",
+    "wheels": "13\""
+  },
+
+  "drawings": {
+    "front": "front",
+    "profile": "profile",
+    "top": "top"
+  },
+
+  "standard": [
+    "Hot-dip galvanized\u00A0construction",
+    "Aluminum load-bearing\u00A0sheets",
+    "Loading ramps made of galvanized steel hidden under the\u00A0platform",
+    "Platform tilted by gravity with gas\u00A0springs",
+    "Manual winch - Dragon",
+    "Support wheel",
+    "Wheel chocks",
+    "LED lighting"
+  ],
+
+  "optional": [
+    "Powder-coated elements",
+    "Aluminum filling",
+    "Toolbox",
+    "Automatic support wheel",
+    "Manual winch - AL-KO",
+    "Electric winch",
+    "Shock absorbers",
+    "One-way hydraulic pump",
+    "Two-way hydraulic pump",
+    "Aluminum sideboards",
+    "Rear lighting with dynamic direction indicator",
+    "Loading ramps made of aluminum hidden under the\u00A0platform",
+    "R10 wheels (not available for DMC\u00A03500)"
+  ],
+
+  "images": {
+    "galvanized": [
+      "r1_closed",
+      "r1_ramps",
+      "r1_tilting",
+      "r2_closed",
+      "r2_tilting",
+      "r3_closed",
+      "r3_ramps",
+      "r3_tilting",
+      "r4_closed",
+      "r4_ramps",
+      "r4_tilting"
+    ],
+    "powdered": [
+      "r1_closed",
+      "r1_ramps",
+      "r1_tilting",
+      "r2_closed",
+      "r2_ramps",
+      "r2_tilting",
+      "r3_closed",
+      "r3_ramps",
+      "r3_tilting",
+      "r4_closed",
+      "r4_ramps",
+      "r4_tilting"
+    ],
+    "filled": [
+      "r1_closed_galvanized",
+      "r1_closed_powdered",
+      "r2_closed_galvanized",
+      "r2_closed_powdered",
+      "r2_ramps_galvanized",
+      "r2_tilting_galvanized",
+      "r2_tilting_powdered",
+      "r3_closed_galvanized",
+      "r3_closed_powdered",
+      "r3_tilting_galvanized",
+      "r3_tilting_powdered",
+      "r4_closed_galvanized",
+      "r4_closed_powdered",
+      "r4_tilting_galvanized",
+      "r4_tilting_powdered"
+    ]
+  }
+}
