@@ -1,0 +1,40 @@
+.luggage__background {
+  background-image: url("/assets/categories/luggageTrailerCard.webp");
+
+}
+.luggage__active {
+  background-image: url("/assets/categories/luggageTrailerCard.webp");
+  background-color: #808ca7;
+  background-blend-mode: luminosity;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.4);
+}
+
+.car-transporters__background {
+  background-image: url("/assets/categories/carTrailerCard.webp");
+}
+.car-transporters__active {
+  background-image: url("/assets/categories/carTrailerCard.webp");
+  background-color: #5ba5b0;
+  background-blend-mode: luminosity;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.4);
+}
+
+.boat__background {
+  background-image: url("/assets/categories/boatTrailerCard.webp");
+}
+.boat__active {
+  background-image: url("/assets/categories/boatTrailerCard.webp");
+  background-color: #8babca;
+  background-blend-mode: luminosity;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.4);
+}
+
+.special__background {
+  background-image: url("/assets/categories/specialTrailerCard.webp");
+}
+.special__active {
+  background-image: url("/assets/categories/specialTrailerCard.webp");
+  background-color: #bd8c64;
+  background-blend-mode: luminosity;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.4);
+}
