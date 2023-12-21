@@ -35,8 +35,7 @@ export const Header = () => {
       <div
         ref={headerRef}
         className={cn(
-          "justify-center w-screen flex fixed p-2 items-center justify-center z-50 top-0 right-0 left-0",
-          isScrolled ? "bg-shaft" : "md:bg-transparent bg-shaft"
+          "justify-center w-screen flex fixed p-2 items-center justify-center z-50 top-0 right-0 left-0 bg-shaft"
         )}
       >
         <NavigationContent />
