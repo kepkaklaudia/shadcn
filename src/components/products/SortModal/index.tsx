@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-
 import {
   Dialog,
   DialogContent,
@@ -12,20 +10,18 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { SortByType, SortModalProps } from "@/libs/types";
-import { sortOptions } from "./sortOptions";
-import { RadioGroupItem } from "@radix-ui/react-radio-group";
-import { RadioGroup } from "@/components/ui/radio-group";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Button } from "@/components/ui/Button";
-import { cn } from "@/libs/utils";
+import { sortOptions } from "@/components/products/SortModal/sortOptions";
 
-export const SortModal: React.FC<SortModalProps> = ({
+export const SortModal = ({
   showModal,
   setShowModal,
   sortBy,
   setSortBy,
   handleSort,
   setSelectedTags,
-}) => {
+}: SortModalProps) => {
   const t = useTranslations("products.sortModal");
   const pathname = usePathname();
   const router = useRouter();
@@ -59,34 +55,32 @@ export const SortModal: React.FC<SortModalProps> = ({
           {sortOptions.map(({ type, label }) => (
             <Button
               key={type}
-              className={cn(
-                "xs:w-[130px] xs:text-base w-[100px] text-sm",
-                sortBy.type === type &&
-                  "bg-white text-black font-medium text-center flex flex items-center justify-center p-1.5 border-shaft border-4 border-solid"
-              )}
+              size={sortBy.type === type ? "sortModalActive" : "sortModal"}
+              variant={sortBy.type === type ? "sortModalActive" : "default"}
+              className="xs:text-base text-sm"
               onClick={() => handleButtonClick(type as SortByType)}
             >
               {t(label)}
             </Button>
           ))}
         </div>
-        <div className="">
+        <div className="my-3">
           {sortBy.type && (
             <>
               <RadioGroup className="flex flex-wrap gap-5 justify-center">
-                <div className="">
+                <div className="flex gap-2">
                   <RadioGroupItem
                     value="asc"
                     checked={sortBy.direction === "asc"}
-                    onChange={() => handleSort(sortBy.type, "asc")}
+                    onClick={() => handleSort(sortBy.type, "asc")}
                   />
                   <label htmlFor="asc">{t("Ascending")}</label>
                 </div>
-                <div className="">
+                <div className="flex gap-2">
                   <RadioGroupItem
                     value="desc"
                     checked={sortBy.direction === "desc"}
-                    onChange={() => handleSort(sortBy.type, "desc")}
+                    onClick={() => handleSort(sortBy.type, "desc")}
                   />
                   <label htmlFor="desc">{t("Descending")}</label>
                 </div>
@@ -94,23 +88,27 @@ export const SortModal: React.FC<SortModalProps> = ({
             </>
           )}
         </div>
-        <Button
-          className="h-[30px] bg-grey text-black px-2.5 py-0"
-          onClick={resetSortAndURL}
-        >
-          {t("Reset")}
-        </Button>
-        <Button
-          className={`${
-            sortBy.direction === "" || sortBy.type === ""
-              ? "h-[30px] bg-grey text-black font-medium cursor-not-allowed px-2.5 py-0 border-none              "
-              : "h-[30px] px-2.5 py-0"
-          }`}
-          onClick={() => setShowModal(false)}
-          disabled={sortBy.direction === "" || sortBy.type === ""}
-        >
-          {t("Sort")}
-        </Button>
+        <div className="flex justify-end gap-2 w-11/12">
+          <Button
+            className="h-[30px] bg-grey text-black px-2.5 py-0"
+            onClick={resetSortAndURL}
+            variant="reset"
+          >
+            {t("Reset")}
+          </Button>
+          <Button
+            className="h-[30px] px-2.5 py-0"
+            onClick={() => setShowModal(false)}
+            variant={
+              sortBy.direction === "" || sortBy.type === ""
+                ? "resetDisabled"
+                : "reset"
+            }
+            disabled={sortBy.direction === "" || sortBy.type === ""}
+          >
+            {t("Sort")}
+          </Button>
+        </div>
       </DialogContent>
     </Dialog>
   );
