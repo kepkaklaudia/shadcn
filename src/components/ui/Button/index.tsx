@@ -11,14 +11,17 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-shaft text-white hover:bg-alabaster hover:text-shaft hover:border-none hover:before:border-shaft   border-none hover:after:border-shaft active:bg-shaft active:text-white",
+          "button bg-shaft text-white hover:bg-alabaster hover:text-shaft hover:border-none hover:before:border-shaft border-none hover:after:border-shaft active:bg-shaft active:text-white",
         destructive: "",
-        all: "uppercase font-normal bg-shaft text-white hover:bg-alabaster hover:text-shaft hover:border-none hover:before:border-shaft border-none hover:after:border-shaft active:bg-shaft active:text-white",
+        all: "button uppercase font-normal bg-shaft text-white hover:bg-alabaster hover:text-shaft hover:border-none hover:before:border-shaft border-none hover:after:border-shaft active:bg-shaft active:text-white",
         allActive:
           "uppercase font-normal bg-alabaster text-shaft border border-shaft border-4",
         reset:
-          "bg-grey text-black hover:bg-alabaster hover:text-shaft hover:border-none hover:before:border-grey   border-none active:text-shaft active:bg-grey hover:after:border-grey",
+          "button bg-grey text-black hover:bg-alabaster hover:text-shaft hover:border-none hover:before:border-grey border-none active:text-shaft active:bg-grey hover:after:border-grey",
+        resetDisabled: "bg-grey text-black cursor-not-allowed border-none",
         outline: "",
+        sortModalActive:
+          "bg-white text-black border-shaft border-4 border-solid",
         secondary: "",
         ghost: "",
         link: "",
@@ -30,6 +33,8 @@ const buttonVariants = cva(
         lg: "h-11  px-8",
         icon: "h-10 w-10",
         active: "py-1.5 px-3 text-sm",
+        sortModal: "xs:w-[130px] h-5 px-3 py-2 w-[90px] mini:w-[100px]",
+        sortModalActive: "xs:w-[122px] h-3  px-3 py-2 w-[82px] mini:w-[192px]",
       },
     },
     defaultVariants: {
@@ -50,9 +55,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
-        className={` button ${cn(
-          buttonVariants({ variant, size, className })
-        )}`}
+        className={`  ${cn(buttonVariants({ variant, size, className }))}`}
         ref={ref}
         {...props}
       />
