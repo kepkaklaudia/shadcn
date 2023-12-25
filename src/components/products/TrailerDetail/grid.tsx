@@ -44,7 +44,7 @@ export const TrailerDetailGrid = ({ products }: TrailerDetailProps) => {
           <React.Fragment key={index}>
             <div
               className="flex flex-col w-[calc(100%-40px)] lg:w-[calc(100%-60px)] xl:w-[calc(100%-80px)] 
-            h-[calc(100%-40px)] lg:h-[calc(100%-60px)] xl:h-[calc(100%-80px)] border h-full p-5 border-solid border-alto lg:p-[30px] xl:p-10"
+            h-[calc(100%-40px)] lg:h-[calc(100%-60px)] xl:h-[calc(100%-80px)] border p-5 border-solid border-alto lg:p-[30px] xl:p-10"
             >
               <Header
                 isGrid
