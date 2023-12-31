@@ -1,8 +1,5 @@
+import { PropertiesProps } from "@/libs/types";
 import { useTranslations } from "next-intl";
-
-interface PropertiesProps {
-  standard: string[];
-}
 
 export const Properties = ({ standard }: PropertiesProps) => {
   const t = useTranslations("product.properties");
