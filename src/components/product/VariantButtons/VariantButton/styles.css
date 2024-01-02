@@ -1,0 +1,53 @@
+.car-transporters__first {
+  background-color: #8fbbc3;
+}
+
+.car-transporters__second {
+  background-color: #b3cfd5;
+}
+
+.car-transporters__third {
+  background-color: #c8dbe0;
+}
+
+.boat__first {
+  background-color: #adbfd2;
+}
+
+.boat__second {
+  background-color: #d7e0e9;
+}
+
+.boat__third {
+  background-color: #eaf2fa;
+}
+
+.special__first {
+  background-color: #633e20;
+  color: #ffffff;
+}
+
+.special__second {
+  background-color: #927863;
+  color: #ffffff;
+}
+
+.special__third {
+  background-color: #bb9b81;
+  color: #ffffff;
+}
+
+.luggage__first {
+  background-color: #3e4557;
+  color: #ffffff;
+}
+
+.luggage__second {
+  background-color: #6b7590;
+  color: #ffffff;
+}
+
+.luggage__third {
+  background-color: #96a4c9;
+  color: #ffffff;
+}
