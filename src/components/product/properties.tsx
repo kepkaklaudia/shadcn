@@ -1,7 +1,7 @@
-import { PropertiesProps } from "@/libs/types";
+import { PropertiesProductProps } from "@/libs/types";
 import { useTranslations } from "next-intl";
 
-export const Properties = ({ standard }: PropertiesProps) => {
+export const Properties = ({ standard }: PropertiesProductProps) => {
   const t = useTranslations("product.properties");
 
   return (
