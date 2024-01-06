@@ -47,7 +47,7 @@ export const Header = () => {
 
 export const SolidHeader = () => (
   <>
-    <div className="bg-shaft">
+    <div className="justify-center w-screen flex fixed p-2 items-center justify-center z-50 top-0 right-0 left-0 bg-shaft">
       <NavigationContent />
     </div>
   </>
