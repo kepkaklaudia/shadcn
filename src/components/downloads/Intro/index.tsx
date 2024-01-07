@@ -21,7 +21,7 @@ export const Intro = () => {
             additionalClass="hidden lg:flex translate-x-[-15px] mt-0 mb-[50px] mx-auto"
             src={"/assets/strokes/strokeRight.svg"}
           />
-          <p>{t("We kindly request")}</p>
+          <p>{t("Please use")}</p>
           <p>{t("All the images")}</p>
         </div>{" "}
       </div>
