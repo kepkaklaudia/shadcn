@@ -9,6 +9,7 @@ import { Carousel } from "@/components/homepage/Carousel";
 import { CategoriesCarousel } from "@/components/homepage/categoriesCarousel";
 import { CreateTrailers } from "@/components/homepage/CreateTrailers";
 import { carouselImages } from "@/app/[locale]/(homepage)/backgroundImages";
+import { ContactForm } from "@/components/common/ContactForm";
 
 export const Content = () => {
   const t = useTranslations("homepage");
@@ -30,6 +31,7 @@ export const Content = () => {
         />
       </section>
       <Border additionalClass="sm:mt-[120px] mt-[100px]" />
+      <ContactForm />
     </>
   );
 };
