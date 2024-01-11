@@ -6,7 +6,7 @@ import { Loader } from "@/components/common/Loader";
 import { Header } from "@/components/product/header";
 import { Stroke } from "@/components/common/stroke";
 import { VariantButtons } from "@/components/product/VariantButtons";
-import { ProductCarousel } from "@/components/product/ProductCarousel";
+import { ProductCarousel } from "@/components/product/productCarousel";
 import { Tags } from "@/components/product/Tags";
 import { Properties } from "@/components/product/properties";
 import { ProductDetails } from "@/components/product/ProductDetails";
