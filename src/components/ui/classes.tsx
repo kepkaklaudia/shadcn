@@ -6,3 +6,6 @@ export const heading =
 
 export const homepageWrapper =
   "lg:grid-cols-[1fr_1fr] lg:gap-[60px] lg:mx-auto lg:my-[50px] w-4/5 grid-cols-[1fr] text-left grid text-sm gap-5 items-center mx-auto my-[30px]";
+
+export const inputStyle =
+  "placeholder:text-sm shadow-none border border-alto px-3 py-1.5 rounded-md focus-visible:outline-none focus-visible:border focus-visible:border-shaft";
