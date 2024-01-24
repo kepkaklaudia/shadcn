@@ -16,13 +16,13 @@ export const Intro = () => {
           width={800}
           height={526}
         />
-        <div className="flex flex-col w-4/5 text-left mx-auto my-0 lg:w-full lg:pr-[100px]">
+        <div className="flex flex-col w-4/5 text-left mx-auto my-0 lg:w-11/12 lg:pr-[100px]">
           <Stroke
             additionalClass="hidden lg:flex translate-x-[-15px] mt-0 mb-[50px] mx-auto"
             src={"/assets/strokes/strokeRight.svg"}
           />
-          <p>{t("Please use")}</p>
-          <p>{t("All the images")}</p>
+          <p className="mb-4">{t("Please use")}</p>
+          <p className="mb-4">{t("All the images")}</p>
         </div>{" "}
       </div>
     </MotionSpring>
