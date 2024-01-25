@@ -59,9 +59,13 @@ module.exports = {
         shaft: "hsl(0, 0%, 18%)",
         shuttle: "hsl(222, 12%, 37%)",
         greyOpacity: "hsla(0, 0%, 100%, 0.208)",
-headerOpacity: "hsla(0, 0%, 85%, 0.459)",
-greyBackground: "hsl(0, 0%, 91%)",
-blackOpacity: "hsla(60, 4%, 11%, 0.502)",
+        headerOpacity: "hsla(0, 0%, 85%, 0.459)",
+        greyBackground: "hsl(0, 0%, 91%)",
+        blackOpacity: "hsla(60, 4%, 11%, 0.502)",
+        haze: "hsl(195, 29%, 95%)",
+        sky: "hsl(189, 32%, 60%)",
+        mist: "hsl(191, 29%, 75%)",
+        crimson: "hsl(348, 83%, 47%)",
 
         black: "hsl(0, 0%, 12%)",
 
