@@ -1,0 +1,26 @@
+.item:nth-child(4n-2) {
+  background-color: #fff;
+}
+
+.item:nth-child(4n-2):hover {
+  background-color: #adcbd2;
+}
+
+.item:nth-child(4n-3) {
+  background-color: #fff;
+}
+
+.item:nth-child(4n-3):hover {
+  background-color: #adcbd2;
+}
+
+@media (max-width: 575.98px) {
+  .item:nth-child(odd) {
+    background-color: #fff;
+    border-right: none;
+  }
+
+  .item:nth-child(even) {
+    background-color: hsl(195, 29%, 95%);
+  }
+}
