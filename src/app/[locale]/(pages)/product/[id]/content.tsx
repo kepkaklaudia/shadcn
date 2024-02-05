@@ -76,7 +76,7 @@ export const Content = ({ id }: { id: string }) => {
         src={`/assets/strokes/${productData.path}Stroke.svg`}
         additionalClass="mx-auto xs:my-[50px] my-[25px]"
       />
-      <div className="flex mx-0 my-[25px] xl:mb-[50px] w-full xl:w-auto xl:flex-row">
+      <div className="flex flex-wrap xl:flex-nowrap mx-0 my-[25px] xl:mb-[50px] w-full xl:w-auto xl:flex-row">
         <div className="flex flex-row w-full xl:w-auto">
           <VariantButtons
             path={productData.path}

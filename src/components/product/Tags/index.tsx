@@ -8,7 +8,7 @@ export const Tags = ({ path, tags, locale }: TagsProductProps) => {
   const t = useTranslations("product.tags");
 
   return (
-    <div className=" text-[10px] mr-5 sm:text-base sm:mr-0 max-w-[500px] text-left">
+    <div className=" text-xs mr-5 sm:text-base sm:mr-0 max-w-[500px] text-left">
       {tags && t("Tags")}
       <div className="flex flex-wrap gap-2.5 justify-start mt-3.5">
         {Array.isArray(tags)
